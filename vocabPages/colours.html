@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<HTML>
+
+    <body>
+        <a href="../index.html">Return to Menu</a>
+        <!-- Vocab Table -->
+        <table id="tblColours">
+        </table>
+        <script>
+            const coloursVocab = {
+                colour: 'warna',
+                red: 'merah',
+                green: 'hijau',
+                blue: 'biru',
+                yellow: 'kuning',
+                orange: 'jingga / oren <i>(oren is also used for the fruit)</i>',
+                purple: 'ungu',
+                pink: 'merah jambu',
+                white: 'putih',
+                black: 'hitam'
+            }
+
+            let coloursTable = document.getElementById('tblColours');
+            for (colour in coloursVocab)
+            {
+                let newRow = coloursTable.insertRow(-1)
+                let cell1 = newRow.insertCell(0);
+                let cell2 = newRow.insertCell(1);
+                cell1.innerHTML = colour;
+                cell2.innerHTML = coloursVocab[colour];
+            }
+        </script>
+        <!-- ## -->
+    </body>
+
+</HTML>
