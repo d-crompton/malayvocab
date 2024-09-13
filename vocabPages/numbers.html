@@ -6,13 +6,16 @@
         <script src="../javascript/numbersPage.js"></script>
         <link rel='stylesheet' href='../stylesheet.css' />
         <style>
-            body div:first-of-type {
+            body>div:first-of-type {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
             }
 
-            table {
+            .vocabTableDiv {
+                display: grid;
+                grid-template-columns: 1;
+                grid-template-rows: 15% 85%;
                 margin: 5px;
             }
         </style>
@@ -22,15 +25,26 @@
         <a href="../index.html">Return to Menu</a>
         <h1>Numbers</h1>
         <div>
-            <!-- Numbers 0 to 10 -->
-            <table id="tblNumbers1"></table>
-            <!-- Numbers 11 to 19 -->
-            <table id="tblNumbers2"></table>
-            <!-- Numbers 20 to 29 -->
-            <table id="tblNumbers3"></table>
-            <!-- Numbers 30, 40... 90 -->
-            <table id="tblNumbers4"></table>
-            <!-- Usage of Se- Paragraph -->
+            <div class="vocabTableDiv">
+                <!-- Numbers 0 to 10 -->
+                <p>0 to 10</p>
+                <table id="tblNumbers1"></table>
+            </div>
+            <div class="vocabTableDiv">
+                <!-- Numbers 11 to 19 -->
+                <p>11 to 19</p>
+                <table id="tblNumbers2"></table>
+            </div>
+            <div class="vocabTableDiv">
+                <!-- Numbers 20 to 29 -->
+                <p>20 to 29</p>
+                <table id="tblNumbers3"></table>
+            </div>
+            <div class="vocabTableDiv">
+                <!-- Numbers 30, 40... 90 -->
+                <p>30, 40, 50...</p>
+                <table id="tblNumbers4"></table>
+            </div>
         </div>
         <p>
             The prefix <span class="hl">Se-</span> may be used in place of <i>satu</i> (one).
