@@ -3,3 +3,8 @@ td {
   border: 1px solid;
   border-collapse: collapse;
 }
+
+.hl {
+  font-weight: bold;
+  font-style: italic;
+}
