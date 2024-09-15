@@ -4,6 +4,7 @@ td {
   border-collapse: collapse;
 }
 
+/* Highlight - combination of bold and italic */
 .hl {
   font-weight: bold;
   font-style: italic;
