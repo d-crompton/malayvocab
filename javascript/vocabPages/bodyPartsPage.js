@@ -21,12 +21,38 @@ const BodyPartsVocab = {
   Thigh: "Peha",
   Knee: "Lutut",
   Calves: "Betis",
-  Shinbone: "Tulang Kering <i>(literally 'Dry Bone')</i>",
+  Shinbone: "Tulang Kering <i>(lit. 'Dry Bone')</i>",
   Ankle: "Pergelangan Kaki",
   Foot: "Kaki",
   Heel: "Tumit Kaki",
   Toes: "Jari Kaki",
 };
 
-const facialFeaturesVocab = {};
-const fingersVocab = {};
+const facialFeaturesVocab = {
+  Face: "Muka",
+  Forehead: "Dahi",
+  Eyebrows: "Kening",
+  Eye: "Mata",
+  Eyelids: "Kelopak Mata",
+  "Eye Lashes": "Bulu Mata",
+  "Small Body Hairs": "Bulu",
+  "Hair (on your head)": "Rambut",
+  Nose: "Hidung",
+  Mouth: "Mulut",
+  Lips: "Bibir",
+  Teeth: "Gigi",
+  Gums: "Gusi",
+  Tongue: "Lidah",
+  Chin: "Dagu",
+  Cheeks: "Pipi",
+  Ears: "Telinga",
+};
+
+const fingersVocab = {
+  Finger: "Jari",
+  Thumb: "Ibu Jari",
+  "Index Finger": "Jari Telunjuk",
+  "Middle Finger": "Jari Tengah / Jari Hantu <i>(lit. 'Ghost Finger')</i>",
+  "Ring Finger": "Jari Manis <i>(lit. 'Sweet Finger')</i>",
+  "Little Finger": "Jari Kelingking",
+};
