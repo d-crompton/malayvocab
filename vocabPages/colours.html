@@ -12,7 +12,9 @@
         <!-- Vocab Table -->
         <table id="tblColours">
         </table>
-        <script>
+        <script type="module">
+            import { populateTable } from '../javascript/support.js';
+
             const coloursVocab = {
                 Colour: 'Warna',
                 Red: 'Merah',
@@ -32,15 +34,7 @@
 
             }
 
-            let coloursTable = document.getElementById('tblColours');
-            for (colour in coloursVocab)
-            {
-                let newRow = coloursTable.insertRow(-1)
-                let cell1 = newRow.insertCell(0);
-                let cell2 = newRow.insertCell(1);
-                cell1.innerHTML = colour;
-                cell2.innerHTML = coloursVocab[colour];
-            }
+            populateTable("tblColours", coloursVocab);
         </script>
         <!-- ## -->
         <p>
