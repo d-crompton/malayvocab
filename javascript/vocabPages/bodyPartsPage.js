@@ -1,5 +1,7 @@
+import { populateTable } from "../support.js";
+
 // Vocab Objects - One per table
-const BodyPartsVocab = {
+const bodyPartsVocab = {
   Head: "Kepala",
   Neck: "Leher",
   "Back of the Neck": "Tengkuk",
@@ -56,3 +58,10 @@ const fingersVocab = {
   "Ring Finger": "Jari Manis <i>(lit. 'Sweet Finger')</i>",
   "Little Finger": "Jari Kelingking",
 };
+
+// Populate tables on page load
+document.addEventListener("DOMContentLoaded", function () {
+  populateTable("tblBodyParts", bodyPartsVocab);
+  populateTable("tblFacialFeatures", facialFeaturesVocab);
+  populateTable("tblFingers", fingersVocab);
+});
