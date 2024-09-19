@@ -1,3 +1,5 @@
+import { populateTable } from "../support.js";
+
 // Vocab Objects - Each object is used for a different table
 const numbersVocab1 = {
   Zero: "Kosong",
@@ -56,18 +58,6 @@ const numbersVocab5 = {
   "One Thousand": "Seribu",
   Millions: "Juta",
   "One Million": "Sejuta",
-};
-
-// Function used to populate the tables
-const populateTable = function (tableId, vocabObject) {
-  let table = document.getElementById(tableId);
-  for (word in vocabObject) {
-    let newRow = table.insertRow(-1);
-    let cell1 = newRow.insertCell(0);
-    let cell2 = newRow.insertCell(1);
-    cell1.innerHTML = word;
-    cell2.innerHTML = vocabObject[word];
-  }
 };
 
 // Populate tables on page load
