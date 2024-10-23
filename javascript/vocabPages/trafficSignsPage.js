@@ -10,6 +10,8 @@ const trafficSignsVocab = {
   "Km/J<br>(Kilometer Sejam)": "Kilometer per Hour",
   "Kawasan Sekolah Berakhir": "School Zone Ends",
   "Kawasan Sekolah Bermula": "School Zone Starts",
+  "kecuali Bas Awam Sahaja<br><em>(May be under a No Parking sign)</em>":
+    "Except Public Buses Only",
   "Ikut Kiri Kecuali Semasa Momotong":
     "Stay Left Unless When Overtaking <br>(<em>Momotong also translates as 'cutting'</em>)",
   Keluar: "Exit",
