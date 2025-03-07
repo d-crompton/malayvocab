@@ -44,7 +44,7 @@ const vocabArray = [
 ];
 
 document.addEventListener("DOMContentLoaded", function () {
-  tblAdjectives = document.getElementById("tblAdjectives");
+  const tblAdjectives = document.getElementById("tblAdjectives");
   vocabArray.forEach((elem, index, array) => {
     let newRow = tblAdjectives.insertRow(-1);
     for (let i = 0; i < elem.length; i++) {
