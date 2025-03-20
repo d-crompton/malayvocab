@@ -1,11 +1,37 @@
+/* Titles */
+h1 {
+  text-align: center;
+}
+
+/* Body / Content */
+body {
+  background-color: #e6f2ff;
+  font-family: Calibri, Tahoma, sans-serif;
+}
+/* 
+p {
+  text-align: center;
+} */
+
+#divMenuText {
+  text-align: center;
+}
+
+/* Tables */
 table {
   margin: 5px;
+  background-color: #f8f8f8;
 }
 
 table,
 td {
   border: 1px solid;
   border-collapse: collapse;
+}
+
+td {
+  width: 220px;
+  padding: 2px 5px;
 }
 
 /* Highlight - combination of bold and italic */
