@@ -6,13 +6,13 @@
         <script src="../../javascript/vocabPages/numbersPage.js" type="module"></script>
         <link rel='stylesheet' href='../../stylesheet.css' />
         <style>
-            body>div:first-of-type {
+            #divVocabTables {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
             }
 
-            .vocabTableDiv {
+            .innerVocabTableDiv {
                 display: grid;
                 grid-template-columns: 1;
                 grid-template-rows: 15% 85%;
@@ -24,25 +24,34 @@
     <body>
         <a href="../../index.html">Return to Menu</a>
         <h1>Numbers</h1>
-        <div>
-            <div class="vocabTableDiv">
+        <div id="divContents">
+            <!-- Contents -->
+            <ul>
+                <li><a href="#divVocabTables">Vocab Tables</a></li>
+                <li><a href="#divNumericClassifiers">Numeric Classifiers</a></li>
+            </ul>
+        </div>
+        <h2>Vocab Tables</h2>
+        <div id="divVocabTables">
+            <!-- Vocab Tables -->
+            <div class="innerVocabTableDiv">
                 <!-- Numbers 0 to 10 -->
-                <p>0 to 10</p>
+                <h3>0 to 10</h3>
                 <table id="tblNumbers1"></table>
             </div>
-            <div class="vocabTableDiv">
+            <div class="innerVocabTableDiv">
                 <!-- Numbers 11 to 19 -->
-                <p>11 to 19</p>
+                <h3>11 to 19</h3>
                 <table id="tblNumbers2"></table>
             </div>
-            <div class="vocabTableDiv">
+            <div class="innerVocabTableDiv">
                 <!-- Numbers 20 to 29 -->
-                <p>20 to 29</p>
+                <h3>20 to 29</h3>
                 <table id="tblNumbers3"></table>
             </div>
-            <div class="vocabTableDiv">
+            <div class="innerVocabTableDiv">
                 <!-- Numbers 30, 40... 90 -->
-                <p>30, 40, 50...</p>
+                <h3>30, 40, 50...</h3>
                 <table id="tblNumbers4"></table>
             </div>
         </div>
@@ -54,6 +63,104 @@
         </p>
         <!-- Table for 100s, 1000s etc. -->
         <table id="tblNumbers5"></table>
+        <!-- Numeric Classifiers -->
+        <h2>Numeric Classifiers</h2>
+        <div id="divNumericClassifiers">
+            <p>Numerical Classifiers (<span class="hl">Penjodoh Bilangan</span>) are words added between the number of
+                an object and the object noun to denote you are counting an amount.<br>
+                Malay has different Numerical Classifiers for counting different types of objects.</p>
+            <table>
+                <!-- Table header -->
+                <tr>
+                    <th>Malay Word</th>
+                    <th>Literal Translation</th>
+                    <th>Usage</th>
+                    <th>Examples</th>
+                </tr>
+                <!-- Other rows-->
+                <!-- Batang -->
+                <tr>
+                    <td>Batang</td>
+                    <td>Trunk</td>
+                    <td>Used to count long, slim objects or sticks</td>
+                    <td>
+                        <span class="hl">Tiga batang pensel</span> - Three pencils
+                    </td>
+                </tr>
+                <!-- Biji -->
+                <tr>
+                    <td>Biji</td>
+                    <td>Seed</td>
+                    <td>Used to count smaller objects. This includes when counting fruit (even though <i>Buah</i> means
+                        fruit).</td>
+                    <td>
+                        <span class="hl">Enam biji epal</span> - Six apples<br>
+                        <span class="hl">Tujuh biji telur</span> - Seven eggs
+                    </td>
+                </tr>
+                <!-- Buah -->
+                <tr>
+                    <td>Buah</td>
+                    <td>Fruit</td>
+                    <td>Used to count larger objects. It is <i>not</i> used when counting fruits</td>
+                    <td>
+                        <span class="hl">Dua buah meja</span> - Two tables<br>
+                        <span class="hl">Tiga buah kereta</span> - Three cars<br>
+                        <span class="hl">Empat buah rumah</span> - Four houses
+                    </td>
+                </tr>
+                <!-- Buku -->
+                <tr>
+                    <td>Buku</td>
+                    <td>Book</td>
+                    <td>Used to count types of book</td>
+                    <td>
+                        <span class="hl">Empat buku latihan</span> - Four exercise books
+                    </td>
+                </tr>
+                <!-- Ekor -->
+                <tr>
+                    <td>Ekor</td>
+                    <td>Tail</td>
+                    <td>Used to count animals</td>
+                    <td>
+                        <span class="hl">Empat ekor anjing</span> - Four dogs
+                    </td>
+                </tr>
+                <!-- Keping -->
+                <tr>
+                    <td>Keping</td>
+                    <td>Piece, Sheet</td>
+                    <td>Used to count pieces of something, sheets of paper or documents</td>
+                    <td>
+                        <span class="hl">Sekeping roti</span> - A piece of bread<br>
+                        <span class="hl">Sembilan keping kertas</span> - Nine sheets of paper
+                    </td>
+                </tr>
+                <!-- Orang -->
+                <tr>
+                    <td>Orang</td>
+                    <td>Person, People</td>
+                    <td>Used to count people</td>
+                    <td>
+                        <span class="hl">Dua orang anak</span> - Two children<br>
+                        <span class="hl">Tiga orang putih</span> - Three white people (westerners)
+                    </td>
+                </tr>
+                <!-- Pucuk -->
+                <tr>
+                    <td>Pucuk</td>
+                    <td>A shoot of a plant</td>
+                    <td>Used to count letters (as in post) and firearms</td>
+                    <td>
+                        <span class="hl">Lima pucuk surat</span> - Five letters<br>
+                        <span class="hl">Sepucuk senapang</span> - A gun
+                    </td>
+                </tr>
+            </table>
+            <p>When counting a single instance or object you add <span class="hl">Se-</span> prefix to the
+                classifier (i.e., <span class="hl">seorang, sebiji</span>). </p>
+        </div>
         <a href="../../index.html">Return to Menu</a>
 
 </HTML>

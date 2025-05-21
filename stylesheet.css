@@ -24,7 +24,8 @@ table {
 }
 
 table,
-td {
+td,
+th {
   border: 1px solid;
   border-collapse: collapse;
 }
